@@ -1,0 +1,68 @@
+import { WeatherData } from "@/types/weather";
+
+export const mockWeatherData: WeatherData = {
+  location: "New York, NY",
+  current: {
+    temperature: 72,
+    condition: "partly-cloudy",
+    description: "Partly Cloudy",
+    feelsLike: 70,
+    humidity: 65,
+    windSpeed: 12,
+    windDirection: "NE",
+    uvIndex: 4,
+    visibility: 10,
+    pressure: 1013,
+  },
+  hourly: [
+    { time: "12 PM", temperature: 72, condition: "partly-cloudy" },
+    { time: "1 PM", temperature: 73, condition: "partly-cloudy" },
+    { time: "2 PM", temperature: 74, condition: "sunny" },
+    { time: "3 PM", temperature: 75, condition: "sunny" },
+    { time: "4 PM", temperature: 74, condition: "sunny" },
+    { time: "5 PM", temperature: 72, condition: "partly-cloudy" },
+    { time: "6 PM", temperature: 70, condition: "cloudy" },
+    { time: "7 PM", temperature: 68, condition: "cloudy" },
+    { time: "8 PM", temperature: 66, condition: "cloudy" },
+    { time: "9 PM", temperature: 65, condition: "partly-cloudy" },
+    { time: "10 PM", temperature: 64, condition: "partly-cloudy" },
+    { time: "11 PM", temperature: 63, condition: "cloudy" },
+  ],
+  daily: [
+    {
+      day: "Today",
+      high: 75,
+      low: 63,
+      condition: "partly-cloudy",
+      description: "Partly Cloudy",
+    },
+    {
+      day: "Tuesday",
+      high: 77,
+      low: 65,
+      condition: "sunny",
+      description: "Sunny",
+    },
+    {
+      day: "Wednesday",
+      high: 73,
+      low: 62,
+      condition: "rainy",
+      description: "Light Rain",
+    },
+    {
+      day: "Thursday",
+      high: 70,
+      low: 58,
+      condition: "cloudy",
+      description: "Mostly Cloudy",
+    },
+    {
+      day: "Friday",
+      high: 74,
+      low: 61,
+      condition: "partly-cloudy",
+      description: "Partly Cloudy",
+    },
+  ],
+};
